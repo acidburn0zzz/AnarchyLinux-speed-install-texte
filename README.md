@@ -1,0 +1,1 @@
+# AnarchyLinux-speed-install-texte
