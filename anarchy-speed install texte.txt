@@ -1,0 +1,293 @@
+AnarchyLinux 
+! ! !  Installation rapide en mode texte ! ! ! 
+Attention AnarchyLinux s'adresse au utilisateur semi-avancé sous linux qui aime la ligne de commande et lire de la documentation car c'est une base Ach pure ...
+
+récupération de l'iso en mode-cli semi-graphique ici
+Anarchy Minimal CLI derniére version téléchargement direct par google-drive
+https://drive.google.com/uc?id=1ENeSGIGyi513eaDC0NE9Z2XWSO9ffjR7&export=download
+
+AnarchyLinux live-iso téléchargement direct par google drive ici
+https://drive.google.com/uc?id=1ENeSGIGyi513eaDC0NE9Z2XWSO9ffjR7&export=download
+
+commande =
+touche entré
+fléche a coté de pavé numérique (decendre-monter)
+selectionner(barre d'espace du clavier)
+
+************************************************************************
+
+-attention -
+pour une installation en mode live allé dans keyboard/layout/(décoché la case use system default en haut a gauche)/en bas Add+ ajouter French/quand french est ajouter dans la liste supprimé English-us en [bas a droite delete]/close [bas a droite close] fermer l'application -keyboard-
+
+-toujours en mode -Live-pour passé en pleine écran sur machine virtuel 
+ouvrir le terminal et taper la commande 
+xrandr -s 1366x768 (exemple) a vous de definir votre résolution.
+
+- ne pas fermer le terminal 
+( mise a jour de l'installateur cli-semi-graphique) tapé cette commande sudo anarchy -u
+(quelque bugs corrigé et traduction amélioré)
+
+-lancé l'installateur depuis le bureau (double-clic)
+
+**************************************************************************
+aprés tous reste similaire que vous soyez en iso-live ou en installer-cli
+**************************************************************************
+
+-Pour la version cli-installer booté sur l'iso 
+Boot Arch Linux (x86_x64)+Ent (entré)
+-tapé la commande loadkeys fr (pour avoir le clavier en français)
+-puis tapé -1- anarchylinux installer+Ent
+(l'installateur se lance interface)
+
+-select your install language
+French----français +Ent
+
+-Bienvenue sur l'installateur AnarchyLinux
+voulez vous commencez la procédure d'installation 
+« Non c'est pour faire un tennis, connard ! Vous avez des cours de libres non ? Vous n'en avez pas ?
+donc oui+Ent
+
+-mise a jour de la liste des mirroirs
+télécharger et trier les nouveau miroir
+veuillez sélectionner le code de votre pay
+France+ENT
+
+
+-définir le clavier
+sélectionnez une diposition de clavier
+fr----French+Ent
+
+-définir les paramétres régionaux
+sélectionnez une localisation
+fr_FR_UTF-8---French +Ent
+
+-sélectionner le fuseu horaire
+Europe+Ent
+veuillez entrer le fuseau horaire secondaire
+Paris+Ent
+
+*******************************************************************************
+
+-partitionner le disque
+partitionement automatisé du disque+Ent
+
+sélectionner le disque ou installé anarchylinux /dev/sda (disque entier)+Ent / systéme de fichier ext4 (systéme de fichier étendue)+Ent
+
+systéme de fichier ext4 (systéme de fichier étendue)+Ent
+
+voulez vous créer un espace de swap
+oui+Ent
+2xfois et /demi votre epasce de ram
+(exemple 2G de mémoire = 4G de swap+Ent
+
+souhaitez vous utiliser le partitionement GPT (valable pour bios uefi)
+circuit bios standart non+Ent
+
+Avertissement cette opération éffacera toutes les données sur le disque
+fléche du clavier numérique enregistrer+Ent
+
+temps d'attente (ça travaille)
+
+***********************************************************************************
+
+-passons a l'installation du bureau plusieur choix s'offre t'as vous
+
+Sélectionner votre option d'installation préféré
+Anarchy-desktop
+installation rapide du bureau (option de desktop restreinte)
+
+Anarchy-advanced descendre tous a fait en bas (fléche clavier numérique)
+(option de desktop avec un pluslarge choix)
+exemple choisir Ach-Linux-base-Base-Devel+Ent
+
+-sélectionner une interface shell
+zsh Shell ZSH (puissant et Riche en fonctionnalités)+Ent
+
+-sélectionner votre configuration zsh préféré
+soit par défaut+Ent
+ou Oh-My-Zsh+Ent
+
+**************************************************************************************
+
+-sélectionner votre utilitaire réseau
+NetworkManager+Ent
+
+
+inclure le support pour les connexion PPOE DSL 
+(si tu as du réseau étendu 512k - tu te trouve en mode -roumaniche- mon cousin !!! et tu vas ramer 
+sélectionné cette option)+Ent
+------------------------------
+si vous avez de l'ADSL haut débit sélectionner non+Ent
+
+****************************************************************************************
+
+Installé os-prober 
+sélectionné cette option si vous avez un dual-boot Windows-Linux (alors déja la té pas un PinPim je te ferais dire ;) 
+oui+Ent
+
+sinon si tous est installé sur un seul disque sélectionner 
+non+Ent
+
+*****************************************************************************************
+
+-voulez vous installer un environement de bureau ou un gestionnaire de fenétre 
+oui+Ent
+sélectionner un environement de bureau
+-attention deux choix s'offre a vous- 
+liste qui commence par Budgie liste des saveur officiel
+en bas plus de gestionaire de fenétre (pour un gestionaire de fénétre spécifique)
+liste qui commence aussi par Budgie
+choisir par exemple lxde---environement léger Lxde(gtk3)+Ent
+installé gtk3 en version expérimental (attention a la casse si ça ne passe pas non+Ent)
+oui+Ent
+
+*******************************************************************************************
+-si vous este sur marchine virtuel VirtualBox
+ajouter virtualbox-guest-utils
+oui+Ent
+
+********************************************************************************************
+-pilote - x86 - input pour le touchpad
+si vous avez un ordinateur portable munie d'un touchpad
+oui+Ent
+si vous avec une tour et un clavier standart
+non+Ent
+**************************************************************************************************
+
+-vouler vous installer un gestionnaire de connexion
+pour lxde lxdm reste le bon choix (léger)
+fléche a coté pavé numérique
+sélectionner+Ent
+
+**************************************************************************************************
+
+-définir le nom d'hote
+exemple=toto-anarchy-lxde Ok+Ent
+
+-définir le mot de passe root
+exemple=root a tapé deu X fois 
++accepter+Ent
+
+-surligné en jaune créer un nouvel utilisateur+Ent
+définir le nom d'utilisateur
+exemple= jean a tapé une fois +accepter+Ent
+
+-définir le nom complet de l'utilisateur
+exemple=jean tintin tapé deux fois
++accepter+Ent
+
+-définir le mot de passe de jean
+exemple=root1950
++accepter+Ent
+
+-activer les privilége sudo pour jean
+oui+Ent
+
+fléche de déplacer sur terminé+Ent
+
+********************************************************************************************************
+
+-Installé des logiciels
+oui+Ent
+
+donc la liste de logicies s'offre a vous
+fléche haut et bas a coté du pavé numérique
+
+dabord ajouter le dépot anarchy
+oui+Ent
+
+pamac-aur sélectioner (barre espace pour sélectionner)
+ok-ajouter
+
+puis sélectionné dans la liste de logiciel disponible méme opération qu'au dessus
+(base fonctionnel)
+Graphisme=gimp
+Internet=firefox -thunderbird -hexchat-transmission-gtk
+Multimedia=multimedia-codecs-mpv player
+Editeur de texte=mousepad
+Bureautique=libreoffice
+Serveur=cups (impression en ligne)activer cups au demarrage oui+Ent - activer le serveur ftp non+Ent
+Systéme=galculator-ntfs3g-sreenfetch-wget
+
+une fois tous cela sélectionner navigué en bas 
+Terminé+Ent
+
+**********************************************************************************************************
+-Installation du systéme
+diverses information sont disponible en haut de la page
+Installer(surligné en jaune)+Ent l'installation se lance 
+
+soyez patient si un bug devais survenir durant l'installation des informations seront disponible ...
+un éxemple= gtk3-expérimental
+
+***********************************************************************************************************
+ 
+!!! - - - Attention - - -  !!!
+si vous este sous virtualbox n'oublié pas de supprimé 
+dans configuration/stockage/controleur ide l'iso AnarchyLinux
+
+***********************************************************************************************************
+
+Enfin corrigé le bug de pamac-Aur qui n'est pas a jour
+ouvrir le terminal
+sudo nano /etc/pacman.conf
+vous rendre en bas du fichier commenter anarchy pour ldésactivé le dépot
+#[anarchy]
+#Server
+#Siglevel
+
+(avec nano)
+ctrl+o et entré pour écrire
+ctrl+x pour quité
+
+ouvrir un nouveaux terminal et tapé ces commandes
+git clone https://aur.archlinux.org/pamac-aur +Ent
+cd pamac-aur +Ent
+makepkg -si +Ent
+
+Procéder a l'installation
+[O/n]
+donc o +Ent
+
+la nouvelle version de pamac-aur se construit 
+et si on rouvre pamac-aur c'est le mimi c'est le raracle ça se charge
+
+pour le coup c'étais vraiment tous con ....
+**************************************************************************************************************
+
+Vous avez maintenant une AnarchyLinux de base que vous pourrer peaufiné histoire de brillé en sociétée ....
+
+By Easy (si des coquilles textuel étais présente n'hésité pas a m'en faire part)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
